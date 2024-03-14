@@ -1,0 +1,50 @@
+{
+  "name": "nystudio107/craft-typogrify",
+  "description": "Typogrify prettifies your web typography by preventing ugly quotes and 'widows' and more",
+  "type": "craft-plugin",
+  "version": "4.0.1",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "typogrify"
+  ],
+  "support": {
+    "docs": "https://nystudio107.com/docs/typogrify/",
+    "issues": "https://nystudio107.com/plugins/typogrify/support",
+    "source": "https://github.com/nystudio107/craft-typogrify"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "nystudio107",
+      "homepage": "https://nystudio107.com/"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "craftcms/cms": "^4.0.0",
+    "michelf/php-smartypants": "^1.8",
+    "mundschenk-at/php-typography": "^6.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "craftcms/plugin-installer": true,
+      "yiisoft/yii2-composer": true
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "nystudio107\\typogrify\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "nystudio107\\typogrify\\Typogrify",
+    "handle": "typogrify",
+    "name": "Typogrify"
+  }
+}
