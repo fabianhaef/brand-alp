@@ -1,0 +1,12 @@
+field: 225e2c06-2164-4773-ba48-8967c3e93bbe # Inhaltsmodule
+fieldLayouts:
+  d3bfd53f-10e3-41d8-be71-3ff17bc1600d:
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: d76ec784-797a-4e89-ae43-d33b25d54893
+        userCondition: null
+handle: wysiwyg
+name: Text
+sortOrder: 1

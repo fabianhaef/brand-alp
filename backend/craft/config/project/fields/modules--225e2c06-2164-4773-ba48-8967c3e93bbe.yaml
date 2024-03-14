@@ -6,14 +6,11 @@ instructions: null
 name: Inhaltsmodule
 searchable: false
 settings:
-  maxBlocks: null
-  maxLevels: null
-  maxTopBlocks: null
-  minBlocks: null
-  minLevels: null
-  minTopBlocks: null
+  contentTable: '{{%matrixcontent_modules}}'
+  maxBlocks: 0
+  minBlocks: 0
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site
-type: benf\neo\Field
+type: craft\fields\Matrix

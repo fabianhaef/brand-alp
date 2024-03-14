@@ -1,0 +1,12 @@
+field: 225e2c06-2164-4773-ba48-8967c3e93bbe # Inhaltsmodule
+fieldLayouts:
+  fa14ee65-297c-4998-903c-097d5f8ebdb8:
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 96f85198-1e57-4ac3-98f4-a0c9f6bd0258
+        userCondition: null
+handle: accordion
+name: Accordion
+sortOrder: 2
