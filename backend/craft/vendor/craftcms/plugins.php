@@ -124,6 +124,24 @@ return array (
     'documentationUrl' => 'https://github.com/verbb/expanded-singles',
     'changelogUrl' => 'https://raw.githubusercontent.com/verbb/expanded-singles/craft-4/CHANGELOG.md',
   ),
+  'verbb/cp-nav' => 
+  array (
+    'class' => 'verbb\\cpnav\\CpNav',
+    'basePath' => $vendorDir . '/verbb/cp-nav/src',
+    'handle' => 'cp-nav',
+    'aliases' => 
+    array (
+      '@verbb/cpnav' => $vendorDir . '/verbb/cp-nav/src',
+    ),
+    'name' => 'Control Panel Nav',
+    'version' => '4.0.11',
+    'description' => 'Manage the Craft Control Panel navigation.',
+    'developer' => 'Verbb',
+    'developerUrl' => 'https://verbb.io',
+    'developerEmail' => 'support@verbb.io',
+    'documentationUrl' => 'https://github.com/verbb/cp-nav',
+    'changelogUrl' => 'https://raw.githubusercontent.com/verbb/cp-nav/craft-4/CHANGELOG.md',
+  ),
   'verbb/field-manager' => 
   array (
     'class' => 'verbb\\fieldmanager\\FieldManager',
@@ -160,24 +178,6 @@ return array (
     'documentationUrl' => 'https://github.com/spicywebau/craft-neo/blob/3.9.11/README.md',
     'changelogUrl' => 'https://github.com/spicywebau/craft-neo/blob/3.x/CHANGELOG.md',
     'downloadUrl' => 'https://github.com/spicywebau/craft-neo/archive/refs/tags/3.9.11.zip',
-  ),
-  'verbb/cp-nav' => 
-  array (
-    'class' => 'verbb\\cpnav\\CpNav',
-    'basePath' => $vendorDir . '/verbb/cp-nav/src',
-    'handle' => 'cp-nav',
-    'aliases' => 
-    array (
-      '@verbb/cpnav' => $vendorDir . '/verbb/cp-nav/src',
-    ),
-    'name' => 'Control Panel Nav',
-    'version' => '4.0.11',
-    'description' => 'Manage the Craft Control Panel navigation.',
-    'developer' => 'Verbb',
-    'developerUrl' => 'https://verbb.io',
-    'developerEmail' => 'support@verbb.io',
-    'documentationUrl' => 'https://github.com/verbb/cp-nav',
-    'changelogUrl' => 'https://raw.githubusercontent.com/verbb/cp-nav/craft-4/CHANGELOG.md',
   ),
   'verbb/hyper' => 
   array (

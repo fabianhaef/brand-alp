@@ -23,7 +23,7 @@ return array(
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'yii2tech\\ar\\softdelete\\' => array($vendorDir . '/craftcms/cms/lib/ar-softdelete/src'),
     'voku\\helper\\' => array($vendorDir . '/voku/urlify/src/voku/helper', $vendorDir . '/voku/email-check/src/voku/helper', $vendorDir . '/voku/anti-xss/src/voku/helper'),
-    'voku\\' => array($vendorDir . '/voku/stop-words/src/voku', $vendorDir . '/voku/portable-ascii/src/voku', $vendorDir . '/voku/portable-utf8/src/voku'),
+    'voku\\' => array($vendorDir . '/voku/stop-words/src/voku', $vendorDir . '/voku/portable-utf8/src/voku', $vendorDir . '/voku/portable-ascii/src/voku'),
     'verbb\\hyper\\' => array($vendorDir . '/verbb/hyper/src'),
     'verbb\\fieldmanager\\' => array($vendorDir . '/verbb/field-manager/src'),
     'verbb\\expandedsingles\\' => array($vendorDir . '/verbb/expanded-singles/src'),

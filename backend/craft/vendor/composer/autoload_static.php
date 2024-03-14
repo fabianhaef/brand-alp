@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit62b264e36211d0038b0569bf51dbefd7
+class ComposerStaticInit69af29210482aaa919ac82ab336a9367
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -306,8 +306,8 @@ class ComposerStaticInit62b264e36211d0038b0569bf51dbefd7
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/stop-words/src/voku',
-            1 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
-            2 => __DIR__ . '/..' . '/voku/portable-utf8/src/voku',
+            1 => __DIR__ . '/..' . '/voku/portable-utf8/src/voku',
+            2 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
         ),
         'verbb\\hyper\\' => 
         array (
@@ -5529,10 +5529,10 @@ class ComposerStaticInit62b264e36211d0038b0569bf51dbefd7
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit62b264e36211d0038b0569bf51dbefd7::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit62b264e36211d0038b0569bf51dbefd7::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit62b264e36211d0038b0569bf51dbefd7::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit62b264e36211d0038b0569bf51dbefd7::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit69af29210482aaa919ac82ab336a9367::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit69af29210482aaa919ac82ab336a9367::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit69af29210482aaa919ac82ab336a9367::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit69af29210482aaa919ac82ab336a9367::$classMap;
 
         }, null, ClassLoader::class);
     }
