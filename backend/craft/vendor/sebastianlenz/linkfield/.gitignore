@@ -1,7 +1,0 @@
-/.idea
-/etc
-/studio.json
-/tests/coverage
-/vendor
-.DS_Store
-composer.lock
