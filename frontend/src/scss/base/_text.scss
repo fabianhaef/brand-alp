@@ -1,0 +1,24 @@
+.text {
+    &__title {
+        @include responsive-font(6vw, 32px, 91px, 56px);
+        font-weight: 900;
+        font-display: swap;
+    }
+
+    &__subtitle {
+        @include responsive-font(4vw, 24px, 40px, 32px);
+        font-display: swap;
+    }
+
+    &__link {
+        @include responsive-font(4vw, 20px, 30px, 26px);
+        font-family: 'DM Serif Display', serif;
+        font-display: swap;
+    }
+
+    &__paragraph {
+        @include responsive-font(2vw, 16px, 20px, 18px);
+        font-display: swap;
+        font-weight: 400;
+    }
+}

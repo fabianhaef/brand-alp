@@ -1,0 +1,11 @@
+.hero {
+    position: relative;
+    padding-bottom: 600px;
+
+    overflow: hidden;
+
+    @include respond-to(small) {
+        padding-bottom: 100vh;
+        padding-bottom: 100svh;
+    }
+}
