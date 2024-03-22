@@ -33,13 +33,25 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 225e2c06-2164-4773-ba48-8967c3e93bbe # Inhaltsmodule
+            fieldUid: 8944216b-26d3-4667-be63-b2ba52e00229 # Startbild
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cb873001-a177-4f6c-931b-7eda452e1287
+            uid: f1fed71d-2a78-4cf7-a81f-b9eae3b6467a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 20c18c2a-6550-4e8f-aeac-27ee0bd5b80f # Starttext
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2a033b5-cf88-466d-86d4-8f66d544ae9f
             userCondition: null
             warning: null
             width: 100

@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 225e2c06-2164-4773-ba48-8967c3e93bbe # Inhaltsmodule
+field: 225e2c06-2164-4773-ba48-8967c3e93bbe
 fieldLayouts:
   20d7425e-e5e2-4124-8c77-2e6e0c341fae:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e8ad8253-23c4-4157-8274-03ec257dcfd3 # Accordion
+            fieldUid: e8ad8253-23c4-4157-8274-03ec257dcfd3
             instructions: null
             label: null
             required: false
