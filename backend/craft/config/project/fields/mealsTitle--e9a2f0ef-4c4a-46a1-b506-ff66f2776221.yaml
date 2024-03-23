@@ -1,0 +1,19 @@
+columnSuffix: avralxao
+contentColumnType: text
+fieldGroup: 0bffe874-4950-4990-b972-6b1d99ee09e4 # Food And Drinks
+handle: mealsTitle
+instructions: null
+name: 'Speisen Titel'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

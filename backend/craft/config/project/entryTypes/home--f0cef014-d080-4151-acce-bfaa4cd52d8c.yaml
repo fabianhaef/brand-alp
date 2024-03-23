@@ -55,8 +55,109 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 5be1203d-02eb-480f-a19e-2c5ada9e0318
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: c7cc6dde-192f-40ab-a654-a3004eaadd1b # Banner Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 544dabdb-0486-4c44-b889-ace48e710368
+            userCondition: null
+            warning: null
+            width: 100
         name: Inhalt
         uid: 4dd806c1-5888-4b4f-aa10-b699c1bb27e8
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cee0e87d-c85f-4ea7-b15e-80a6d13d3a76 # Standort Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3cc2a46-ed4b-451d-b008-3ca68eb1a767
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f7e251b-0d47-4b0e-a1fd-37384588c244 # Standort Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c4919b5-21db-4174-8e11-039d57bd1145
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f22067e8-b7c8-4213-a1ca-4abe6d7e1f66 # Standort Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 872e854c-ab65-4c67-a828-1a0d5bf99ca2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 53663f9e-7fed-498d-a311-d78a14218842 # Standort Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 045b5fd5-7321-47a1-94cb-d15dd652a03e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Standort
+        uid: 4ad65bc2-b05f-4b7e-aba6-ea9da085f49c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e9a2f0ef-4c4a-46a1-b506-ff66f2776221 # Speisen Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e81291f8-b5d3-4074-86ff-49aa906bf63c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a78c039f-e0dc-463b-9947-59494494f58d # Speisen Bilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68172b58-0d67-4a41-93fc-f63d46a412a7
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Speisen und Getränke'
+        uid: 087422e4-e4c2-4417-8b12-75a92dfd312e
         userCondition: null
       -
         elementCondition: null

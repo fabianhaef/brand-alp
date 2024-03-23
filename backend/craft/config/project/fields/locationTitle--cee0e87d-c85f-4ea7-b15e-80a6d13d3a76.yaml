@@ -1,0 +1,19 @@
+columnSuffix: mrjmeafl
+contentColumnType: text
+fieldGroup: 056651d5-c4a8-4d21-82ed-7a7eb78d225d # Location
+handle: locationTitle
+instructions: null
+name: 'Standort Titel'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

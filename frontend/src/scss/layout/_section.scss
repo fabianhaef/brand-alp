@@ -1,5 +1,31 @@
 .section {
+    margin-bottom: $margin-large;
+    
     &__title {
-        
+        @extend .text__subtitle;
+        color: $color-green;
+        margin-bottom: $margin-small;
+    }
+
+    &__wysiwyg {
+        @extend .text__paragraph;
+        margin-bottom: $margin-small;
+    }
+
+    &__image {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        margin-top: $margin-medium;
+
+        picture {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }

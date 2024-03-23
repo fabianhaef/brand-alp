@@ -1,0 +1,23 @@
+columnSuffix: ncnpqhai
+contentColumnType: text
+fieldGroup: 056651d5-c4a8-4d21-82ed-7a7eb78d225d # Location
+handle: locationText
+instructions: null
+name: 'Standort Text'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: e63ecf25-207b-44e7-a7fa-f741c17b8917 # Simple
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

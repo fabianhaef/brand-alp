@@ -1,0 +1,14 @@
+columnSuffix: gkupwurh
+contentColumnType: string(255)
+fieldGroup: 056651d5-c4a8-4d21-82ed-7a7eb78d225d # Location
+handle: locationLink
+instructions: null
+name: 'Standort Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

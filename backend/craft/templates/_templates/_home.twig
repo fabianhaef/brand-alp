@@ -78,36 +78,113 @@
 		</div>
 		<div class="hero__shadow"></div>
 		<div class="hero__content">
-			<h1 class="hero__title">Willkommen auf der Brand Alp</h1>
+			<h1 class="hero__title">{{ entry.heroText }}</h1>
 		</div>
 		<div class="hero__banner">
-			<p class="banner__text">Wir haben ab dem 04. Mai 2024 wieder geöffnet</p>
+			<p class="banner__text">{{ entry.bannerText }}</p>
 		</div>
 	</div>
 
 
 	<main class="main" id="main">
-		<section id="location">
+		<section class="section" id="location">
 			<div class="container">
 				<div class="row">
 					<div class="gr-24">
-						<h2 class="section__title">Standort</h2>
-						<p>
-							In Unterägeri im Kreisel bei der Migros rechts Richtung "Höfe-Hürital" abbiegen.
-							
-							Circa 4.7km Richtung Zuger Alpli-Schönalp-Hüttli, dann links in Richtung Hürital.
-							
-							nach ca. 3km kommt ihr zu unserem Wegweiser,
-							
-							Ab da sind es noch 10 min. Fussweg bis zur Brandalp.
-                        </p>
+						<h2 class="section__title">{{ entry.locationTitle }}</h2>
+						<div class="section__wysiwyg">
+							{{entry.locationText}}
+						</div>
+						<a href="{{ entry.locationLink }}" target="_blank" class="button">Google Maps &rarr;</a>
+					</div>
+					<div class="gr-24">
+
+						{% set mobile = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 320,
+                            quality: 100,
+                            } %}
+
+						{% set tablet = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 450,
+                            quality: 100,
+                            } %}
+
+						{% set desktop = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 1020,
+                            quality: 100,
+                        } %}
+
+						{% set locationImage = entry.locationImage.one() %}
+
+						<div class="section__image">
+							<picture>
+								<source media="(min-width: 1680px)" srcset="{{ locationImage.url(desktop) }}" data-srcset="{{ locationImage.url(desktop) }}" type="image/webp">
+								<source media="(min-width: 1680px)" srcset="{{ locationImage.url(desktop) }}" data-srcset="{{ locationImage.url(desktop) }}" type="image/jpeg">
+
+								<source media="(min-width: 768px)" srcset="{{ locationImage.url(tablet) }}" data-srcset="{{ locationImage.url(tablet) }}" type="image/webp">
+								<source media="(min-width: 768px)" srcset="{{ locationImage.url(tablet) }}" data-srcset="{{ locationImage.url(tablet) }}" type="image/jpeg">
+
+								<source media="(min-width: 300px)" srcset="{{ locationImage.url(mobile) }}" data-srcset="{{ locationImage.url(mobile) }}" type="image/webp">
+								<source media="(min-width: 300px)" srcset="{{ locationImage.url(mobile) }}" data-srcset="{{ locationImage.url(mobile) }}" type="image/jpeg">
+
+								<img src="{{ locationImage.url }}" alt="Bild der Brandalp">
+							</picture>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="food-and-drinks"></section>
-		<section id="gallery"></section>
-		<section id="partners"></section>
+
+		
+		<section class="section foodSlider" id="food-and-drinks">
+			<div class="container">
+				<div class="row">
+					<div class="gr-24">
+						<h2 class="section__title">{{entry.mealsTitle}}</h2>
+					</div>
+				</div>
+			</div>
+			{% set sliderImages = entry.foodImages.all() %}
+
+			<div class="container">
+				<div class="row">
+					<div class="gr-24">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								{% for image in sliderImages %}
+									<div class="swiper-slide">
+										<div class="slider__image">
+											<picture>
+												<source media="(min-width: 1680px)" srcset="{{ image.url(desktop) }}" data-srcset="{{ image.url(desktop) }}" type="image/webp">
+												<source media="(min-width: 1680px)" srcset="{{ image.url(desktop) }}" data-srcset="{{ image.url(desktop) }}" type="image/jpeg">
+
+												<source media="(min-width: 768px)" srcset="{{ image.url(tablet) }}" data-srcset="{{ image.url(tablet) }}" type="image/webp">
+												<source media="(min-width: 768px)" srcset="{{ image.url(tablet) }}" data-srcset="{{ image.url(tablet) }}" type="image/jpeg">
+
+												<source media="(min-width: 300px)" srcset="{{ image.url(mobile) }}" data-srcset="{{ image.url(mobile) }}" type="image/webp">
+												<source media="(min-width: 300px)" srcset="{{ image.url(mobile) }}" data-srcset="{{ image.url(mobile) }}" type="image/jpeg">
+
+												<img src="{{image.url}}" alt="">
+											</picture>
+										</div>
+									</div>
+								{% endfor %}
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="section" id="gallery"></section>
+		<section class="section" id="partners"></section>
 	</main>
 
 
