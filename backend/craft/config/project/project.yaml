@@ -1,4 +1,4 @@
-dateModified: 1711226126
+dateModified: 1711234421
 elementSources:
   craft\elements\Entry:
     -
@@ -95,6 +95,7 @@ meta:
     e63ecf25-207b-44e7-a7fa-f741c17b8917: Simple # Simple
     ec1627dc-b5f5-48b7-9930-176066964085: Link # Link
     f0cef014-d080-4151-acce-bfaa4cd52d8c: Home # Home
+    f71add43-bcd6-4ed0-ad64-7f1bd69b160b: 'Subsite Text' # Subsite Text
     f975f4a5-2e11-410c-bdb3-18a648976b12: Text # Text
     f22067e8-b7c8-4213-a1ca-4abe6d7e1f66: 'Standort Link' # Standort Link
     fdff2943-9d99-4e31-8950-f3bf9cbdfe69: 'Gallerie Titel' # Gallerie Titel

@@ -2,11 +2,11 @@
 	<header class="header" id="header">
 		<div class="header__wrapper">
 			<div class="container">
-				<div class="row">
-					<div class="gr-12">
+				<div class="row ">
+					<div class="gr-14 gr-6@small">
 						<a href="{{ url('/') }}" class="header__slogan">Brand Alp</a>
 					</div>
-					<div class="gr-12 show hide@small">
+					<div class="gr-10 show hide@small">
 						<div class="header__target">
 							<div class="header__burger">
 								<div class="line"></div>
@@ -15,16 +15,18 @@
 							</div>
 						</div>
 					</div>
-					<div class="gr-12 hide show@small">
+					<div class="gr-18 hide show@small">
 						<div class="header__jumpNav">
-							<a href="#location"></a>
-							<a href="#food-and-drinks"></a>
-							<a href="#gallery"></a>
-							<a href="#partners"></a>
+							<a class="link" href="#location">Standort</a>
+							<a class="link" href="#food-and-drinks">Speisen & Getränke</a>
+							<a class="link" href="#gallery">Gallerie</a>
+							<a class="link" href="#partners">Partner</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+
+	{% include "_includes/nav" %}
 {% endblock %}

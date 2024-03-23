@@ -6,6 +6,7 @@
         z-index: $layer-header;
         width: 100%;
         padding: 12px 0;
+        background-color: transparent;
     }
 
     &__slogan {
@@ -23,6 +24,19 @@
 
         &:hover {
             cursor: pointer;
+        }
+    }
+
+    &__jumpNav {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: $margin-small;
+
+        .link {
+            @extend .text__paragraph;
+            color: $color-white;
         }
     }
 
@@ -76,5 +90,5 @@
                 }
             }
         }
-    }
+    }   
 }

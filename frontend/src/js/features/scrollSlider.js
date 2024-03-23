@@ -17,7 +17,7 @@ const setupScrollSliders = () => {
         filteredImages.forEach((i, index) => {
             const width = i.getBoundingClientRect().width;
             if (index + 1 !== filteredImages.length) {
-                totalWidth += width + 30;
+                totalWidth += width;
             }
         });
 
@@ -50,7 +50,7 @@ const setupScrollSliders = () => {
             .create({
                 trigger: img,
                 start: 'center center',
-                end: '+=100%',
+                end: () => `+=95%`, // Calculate endpoint dynamically
                 pin: true,
                 pinSpacing: false,
                 onUpdate: self => {

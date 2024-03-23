@@ -3,7 +3,7 @@
 		<div class="row">
 			{% for matrixBlock in entry.alpRestaurants.all() %}
 				{% set blockImage = matrixBlock.blockImage.one() %}
-				<div class="gr-12">
+				<div class="gr-12 gr-8@small">
 					<a class="partner" href="{{ matrixBlock.blockLink }}" target="_blank">
 						<div class="partner__image">
 							<picture>

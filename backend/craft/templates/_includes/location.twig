@@ -3,14 +3,14 @@
 <section class="section" id="location">
 	<div class="container">
 		<div class="row">
-			<div class="gr-24">
+			<div class="gr-24 gr-12@small">
 				<h2 class="section__title">{{ entry.locationTitle }}</h2>
 				<div class="section__wysiwyg">
 					{{entry.locationText}}
 				</div>
 				<a href="{{ entry.locationLink }}" target="_blank" class="button">Google Maps &rarr;</a>
 			</div>
-			<div class="gr-24">
+			<div class="gr-24 gr-12@small">
 				{% set mobile = {
                             mode: 'crop',
                             format: 'webp',
