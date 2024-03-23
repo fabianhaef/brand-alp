@@ -1,0 +1,23 @@
+<section class="section" id="partners">
+	<div class="container">
+		<div class="row">
+			{% for matrixBlock in entry.alpRestaurants.all() %}
+				{% set blockImage = matrixBlock.blockImage.one() %}
+				<div class="gr-12">
+					<a class="partner" href="{{ matrixBlock.blockLink }}" target="_blank">
+						<div class="partner__image">
+							<picture>
+								<img src="{{blockImage.url}}" alt="Bild {{ matrixBlock.blockName }}">
+							</picture>
+						</div>
+						<div class="partner__name">
+							{{ matrixBlock.blockName}}
+
+						</div>
+						{{ svg('@webroot/dist/static/svg/arrowRight.svg') }}
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

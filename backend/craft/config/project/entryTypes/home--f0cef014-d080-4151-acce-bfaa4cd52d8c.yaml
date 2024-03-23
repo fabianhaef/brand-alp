@@ -164,6 +164,24 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 11c2ce43-5a86-4949-9221-5c782ce91b2e # Alpwirtschaften
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b3be79f-5940-4e00-a6f0-25f4e75d6191
+            userCondition: null
+            warning: null
+            width: 100
+        name: Alpwirtschaften
+        uid: ff31a43c-d24d-4dbb-9a27-99dc4187b522
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 206b0441-3b56-4d0e-9491-0b8d30b4baed # SEO
             instructions: null
             label: null
@@ -176,6 +194,36 @@ fieldLayouts:
             width: 100
         name: SEO
         uid: 7f92f7a5-dfc9-4950-aa5c-92792ea66215
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: fdff2943-9d99-4e31-8950-f3bf9cbdfe69 # Gallerie Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d90d5bd7-aaeb-4a94-91d5-063a1ed6beef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d8b71489-beed-4561-af1e-7e4393a02db4 # Gallerie Bilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c616f0c5-1ce9-4dde-90f8-56abb200087a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Gallerie
+        uid: 68c86afe-abdb-443e-abe7-66c8806e76c3
         userCondition: null
 handle: home
 hasTitleField: false

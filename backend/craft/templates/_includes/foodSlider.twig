@@ -1,0 +1,62 @@
+{% set mobile = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 320,
+                            quality: 100,
+                            } %}
+
+{% set tablet = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 450,
+                            quality: 100,
+                            } %}
+
+{% set desktop = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 1020,
+                            quality: 100,
+                        } %}
+
+<section class="section foodSlider" id="food-and-drinks">
+	<div class="container">
+		<div class="row">
+			<div class="gr-24">
+				<h2 class="section__title">{{entry.mealsTitle}}</h2>
+			</div>
+		</div>
+	</div>
+	{% set sliderImages = entry.foodImages.all() %}
+
+	<div class="container">
+		<div class="row">
+			<div class="gr-24">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						{% for image in sliderImages %}
+							<div class="swiper-slide">
+								<div class="slider__image">
+									<picture>
+										<source media="(min-width: 1680px)" srcset="{{ image.url(desktop) }}" data-srcset="{{ image.url(desktop) }}" type="image/webp">
+										<source media="(min-width: 1680px)" srcset="{{ image.url(desktop) }}" data-srcset="{{ image.url(desktop) }}" type="image/jpeg">
+
+										<source media="(min-width: 768px)" srcset="{{ image.url(tablet) }}" data-srcset="{{ image.url(tablet) }}" type="image/webp">
+										<source media="(min-width: 768px)" srcset="{{ image.url(tablet) }}" data-srcset="{{ image.url(tablet) }}" type="image/jpeg">
+
+										<source media="(min-width: 300px)" srcset="{{ image.url(mobile) }}" data-srcset="{{ image.url(mobile) }}" type="image/webp">
+										<source media="(min-width: 300px)" srcset="{{ image.url(mobile) }}" data-srcset="{{ image.url(mobile) }}" type="image/jpeg">
+
+										<img src="{{image.url}}" alt="">
+									</picture>
+								</div>
+							</div>
+						{% endfor %}
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

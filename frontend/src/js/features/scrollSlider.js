@@ -32,22 +32,14 @@ const setupScrollSliders = () => {
 
     scrollSliders.forEach(img => {
         const wrapper = img.querySelector('.imagescroll__wrapper');
-        const content = img.querySelector('.imagescroll__content');
         const inner = img.querySelector('.imagescroll__inner');
 
-        // If multiple modules are in the same page, only get the ones with the same id
         const filteredImages = Array.from(allImages).filter(i => i.getAttribute('data-group') === img.getAttribute('data-group'));
 
-        // Set width of the text
-        if (content) {
-            content.style.width = document.body.scrollWidth - 30 + 'px';
-        }
-        
+
+
         // Some responsive stuff for both text & scroll container
         window.addEventListener('resize', () => {
-            if (content) {
-                content.style.width = document.body.scrollWidth - 30 + 'px';
-            }
             calculateContainerWidth(filteredImages, wrapper);
         });
 

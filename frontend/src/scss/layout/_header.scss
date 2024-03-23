@@ -11,14 +11,15 @@
     &__slogan {
         font-family: 'Inter', sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 32px;
         color: $color-white;
     }
 
     &__target {
+        height: 100%;
         display: flex;
         justify-content: flex-end;
-
+        align-items: center;
 
         &:hover {
             cursor: pointer;

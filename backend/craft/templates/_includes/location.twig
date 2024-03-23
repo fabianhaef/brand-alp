@@ -1,0 +1,52 @@
+{% set locationImage = entry.locationImage.one() %}
+
+<section class="section" id="location">
+	<div class="container">
+		<div class="row">
+			<div class="gr-24">
+				<h2 class="section__title">{{ entry.locationTitle }}</h2>
+				<div class="section__wysiwyg">
+					{{entry.locationText}}
+				</div>
+				<a href="{{ entry.locationLink }}" target="_blank" class="button">Google Maps &rarr;</a>
+			</div>
+			<div class="gr-24">
+				{% set mobile = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 320,
+                            quality: 100,
+                            } %}
+
+				{% set tablet = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 450,
+                            quality: 100,
+                            } %}
+
+				{% set desktop = {
+                            mode: 'crop',
+                            format: 'webp',
+                            width: 1020,
+                            quality: 100,
+                        } %}
+
+				<div class="section__image">
+					<picture>
+						<source media="(min-width: 1680px)" srcset="{{ locationImage.url(desktop) }}" data-srcset="{{ locationImage.url(desktop) }}" type="image/webp">
+						<source media="(min-width: 1680px)" srcset="{{ locationImage.url(desktop) }}" data-srcset="{{ locationImage.url(desktop) }}" type="image/jpeg">
+
+						<source media="(min-width: 768px)" srcset="{{ locationImage.url(tablet) }}" data-srcset="{{ locationImage.url(tablet) }}" type="image/webp">
+						<source media="(min-width: 768px)" srcset="{{ locationImage.url(tablet) }}" data-srcset="{{ locationImage.url(tablet) }}" type="image/jpeg">
+
+						<source media="(min-width: 300px)" srcset="{{ locationImage.url(mobile) }}" data-srcset="{{ locationImage.url(mobile) }}" type="image/webp">
+						<source media="(min-width: 300px)" srcset="{{ locationImage.url(mobile) }}" data-srcset="{{ locationImage.url(mobile) }}" type="image/jpeg">
+
+						<img src="{{ locationImage.url }}" alt="Bild der Brandalp">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

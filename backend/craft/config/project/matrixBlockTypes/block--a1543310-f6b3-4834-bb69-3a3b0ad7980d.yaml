@@ -1,0 +1,124 @@
+field: 11c2ce43-5a86-4949-9221-5c782ce91b2e # Alpwirtschaften
+fieldLayouts:
+  456a18fb-a42f-47d8-b837-93a1d8904b35:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d7efc0ac-71c6-4ab3-b996-ad86a437d1d9 # Alpwirtschaftsname
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47332d65-839e-41d7-8f47-ac910a2610fe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9bb9b75a-9397-440a-8079-b62c7c281585 # Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28584044-30d0-4750-ac4d-4ec190bc6db8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec1627dc-b5f5-48b7-9930-176066964085 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 54cfd388-bf7d-40f1-a5dd-322d68a35024
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1b9fb0be-4501-4ff1-a225-3893aade383d
+        userCondition: null
+fields:
+  9bb9b75a-9397-440a-8079-b62c7c281585: # Bild
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: blockImage
+    instructions: null
+    name: Bild
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d7efc0ac-71c6-4ab3-b996-ad86a437d1d9: # Alpwirtschaftsname
+    columnSuffix: imonaiyy
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockName
+    instructions: null
+    name: Alpwirtschaftsname
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ec1627dc-b5f5-48b7-9930-176066964085: # Link
+    columnSuffix: ryfcherx
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: blockLink
+    instructions: null
+    name: Link
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: block
+name: Wirtschaft
+sortOrder: 1

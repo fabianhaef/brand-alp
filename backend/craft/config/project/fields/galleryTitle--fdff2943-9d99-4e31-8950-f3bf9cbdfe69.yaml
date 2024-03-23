@@ -1,0 +1,19 @@
+columnSuffix: zdsqtypk
+contentColumnType: text
+fieldGroup: 12a480cf-2b03-4fbf-b964-740fd75d76de # Gallerie
+handle: galleryTitle
+instructions: null
+name: 'Gallerie Titel'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,57 @@
+{% set galleryElements = entry.galleryImages.all() %}
+<section class="section imagescroll" id="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="imagescroll__wrapper">
+				<div class="imagescroll__inner">
+					{% for img in galleryElements %}
+						<div class="imagescroll__item">
+							{% set webp320 = {
+                            width: 308,
+                        	height: 440,
+                            mode: 'crop',
+                            quality: 100,
+                            format: 'webp'
+                        } %}
+
+							{% set jpeg320 = {
+							width: 308,
+                            height: 440,
+                            mode: 'crop',
+                            quality: 100,
+							format: 'jpeg'
+                        } %}
+
+							{% set webp768 = {
+                            width: 463,
+                            height: 640,
+                            mode: 'crop',
+                            quality: 100,
+                            format: 'webp'
+                        } %}
+
+							{% set jpeg768 = {
+                            width: 463,
+                            height: 640,
+                            mode: 'crop',
+                            quality: 100,
+                            format: 'jpeg'
+                        } %}
+
+							<picture>
+								<source media="(min-width: 768px)" srcset="{{ img.url(webp768) }}" data-srcset="{{ img.url(webp768) }}" type="image/webp">
+								<source media="(min-width: 768px)" srcset="{{ img.url(jpeg768) }}" data-srcset="{{ img.url(jpeg768) }}" type="image/jpeg">
+
+								<source media="(min-width: 300px)" srcset="{{ img.url(webp320) }}" data-srcset="{{ img.url(webp320) }}" type="image/webp">
+								<source media="(min-width: 300px)" srcset="{{ img.url(jpeg320) }}" data-srcset="{{ img.url(jpeg320) }}" type="image/jpeg">
+
+								<img src="{{ img.url(jpeg320) }}" width="{{ img.getWidth(webp320) }}" height="{{ img.getHeight(jpeg320) }}" class="imagescroll__image scrollimage-image lazyload" alt="{{ img.alt }}" data-container="imagescroll-{{ loop.index }}" data-content="{{ img.alt }}" data-group="{{ loop.index }}">
+							</picture>
+
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
