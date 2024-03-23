@@ -1,14 +1,115 @@
 {% extends '_layouts/master' %}
 {% set bodyClass = 'home' %}
 
+{% set preview = {
+        mode: 'crop',
+        format: 'webp',
+        width: 768,
+        height: 'auto',
+        quality: 80,
+    } %}
+
+{% set mobile = {
+        mode: 'crop',
+        format: 'webp',
+        width: 768,
+        height: 'auto',
+        quality: 100,
+    } %}
+
+{% set tablet = {
+        mode: 'crop',
+        format: 'webp',
+        width: 880,
+        height: 'auto',
+        quality: 100,
+    } %}
+
+
+{% set medium = {
+        mode: 'crop',
+        format: 'webp',
+        width: 1000,
+        height: 'auto',
+        quality: 100,
+    } %}
+
+{% set large = {
+        mode: 'crop',
+        format: 'webp',
+        width: 1440,
+        height: 'auto',
+        quality: 100,
+    } %}
+
+{% set full = {
+        mode: 'crop',
+        format: 'webp',
+        width: 1560,
+        height: 'auto',
+        quality: 100,        
+} %}
+
 {% block content %}
-    {% include '_includes/header' %}
+	{% include '_includes/header' %}
 
-    <main class="main" id="main">
-        <div class="modules">
-        </div>
-    </main>
+	{% set heroImage = entry.heroImage.one() %}
+
+	<div class="hero">
+		<div class="hero__image">
+			<picture>
+				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" data-srcset="{{ heroImage.url(full) }}" type="image/webp">
+				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" data-srcset="{{ heroImage.url(full) }}" type="image/jpeg">
+
+				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" data-srcset="{{ heroImage.url(large) }}" type="image/webp">
+				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" data-srcset="{{ heroImage.url(large) }}" type="image/jpeg">
+
+				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" data-srcset="{{ heroImage.url(medium) }}" type="image/webp">
+				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" data-srcset="{{ heroImage.url(medium) }}" type="image/jpeg">
+
+				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" data-srcset="{{ heroImage.url(tablet) }}" type="image/webp">
+				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" data-srcset="{{ heroImage.url(tablet) }}" type="image/jpeg">
+
+				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" data-srcset="{{ heroImage.url(mobile) }}" type="image/webp">
+				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" data-srcset="{{ heroImage.url(mobile) }}" type="image/jpeg">
+
+				<img src="{{ heroImage.url }}" alt="Brandalp Hero Image">
+			</picture>
+		</div>
+		<div class="hero__shadow"></div>
+		<div class="hero__content">
+			<h1 class="hero__title">Willkommen auf der Brand Alp</h1>
+		</div>
+		<div class="hero__banner">
+			<p class="banner__text">Wir haben ab dem 04. Mai 2024 wieder geöffnet</p>
+		</div>
+	</div>
 
 
-    {% include '_includes/footer' %}
+	<main class="main" id="main">
+		<section id="location">
+			<div class="container">
+				<div class="row">
+					<div class="gr-24">
+						<h2 class="section__title">Standort</h2>
+						<p>
+							In Unterägeri im Kreisel bei der Migros rechts Richtung "Höfe-Hürital" abbiegen.
+							
+							Circa 4.7km Richtung Zuger Alpli-Schönalp-Hüttli, dann links in Richtung Hürital.
+							
+							nach ca. 3km kommt ihr zu unserem Wegweiser,
+							
+							Ab da sind es noch 10 min. Fussweg bis zur Brandalp.
+                        </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="food-and-drinks"></section>
+		<section id="gallery"></section>
+		<section id="partners"></section>
+	</main>
+
+
+	{% include '_includes/footer' %}
 {% endblock %}

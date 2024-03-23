@@ -1,16 +1,30 @@
 {% block header %}
-    <header class="header" id="header">
-        <div class="header__wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="gr-12">
-
-                    </div>
-                    <div class="gr-12">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+	<header class="header" id="header">
+		<div class="header__wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="gr-12">
+						<a href="{{ url('/') }}" class="header__slogan">Brand Alp</a>
+					</div>
+					<div class="gr-12 show hide@small">
+						<div class="header__target">
+							<div class="header__burger">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="gr-12 hide show@small">
+						<div class="header__jumpNav">
+							<a href="#location"></a>
+							<a href="#food-and-drinks"></a>
+							<a href="#gallery"></a>
+							<a href="#partners"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 {% endblock %}

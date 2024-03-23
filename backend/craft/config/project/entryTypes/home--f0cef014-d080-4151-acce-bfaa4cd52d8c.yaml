@@ -42,7 +42,7 @@ fieldLayouts:
             uid: f1fed71d-2a78-4cf7-a81f-b9eae3b6467a
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: 20c18c2a-6550-4e8f-aeac-27ee0bd5b80f # Starttext
@@ -54,7 +54,7 @@ fieldLayouts:
             uid: e2a033b5-cf88-466d-86d4-8f66d544ae9f
             userCondition: null
             warning: null
-            width: 100
+            width: 50
         name: Inhalt
         uid: 4dd806c1-5888-4b4f-aa10-b699c1bb27e8
         userCondition: null

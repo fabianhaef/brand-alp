@@ -1,0 +1,77 @@
+.header {
+    &__wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: $layer-header;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    &__slogan {
+        font-weight: bold;
+        color: $color-white;
+    }
+
+    &__target {
+        display: flex;
+        justify-content: flex-end;
+
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__burger {
+        width: 32px;
+        height: 20px;
+        position: relative;
+        transition: $anim;
+
+        .line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $color-white;
+            transition: $anim;
+
+            &:first-child {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                top: 9px;
+            }
+
+            &:last-child {
+                bottom: 0;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.active {
+            .line {
+                transition: $anim;
+
+                &:first-child {
+                    top: 9px;
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                    transform: opacity;
+                }
+
+                &:last-child {
+                    bottom: 9px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
