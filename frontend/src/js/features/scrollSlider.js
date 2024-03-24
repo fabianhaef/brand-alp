@@ -21,16 +21,17 @@ const setupScrollSliders = () => {
             }
         });
 
-        if (window.innerWidth < 768) {
-            totalWidth -= 50;
-        }
+        // if (window.innerWidth < 768) {
+        //     totalWidth -= 50;
+        // }
 
+        totalWidth = totalWidth - 20;
 
-        if (window.innerWidth < 768) {
-            totalWidth = totalWidth - 20;
-        } else {
-            totalWidth = totalWidth - 50;
-        }
+        // if (window.innerWidth < 768) {
+        //     totalWidth = totalWidth - 20;
+        // } else {
+        //     totalWidth = totalWidth - 50;
+        // }
 
         wrapper.style.width = `${totalWidth}px`;
         wrapper.style.maxWidth = `${totalWidth}px`;

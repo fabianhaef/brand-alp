@@ -65,6 +65,7 @@
         }
 
         @include respond-to(full) {
+            width: 1600px;
             left: calc((100vw - 1680px) / 2);
         }
     }

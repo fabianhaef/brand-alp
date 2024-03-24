@@ -27,6 +27,8 @@ return [
 
         'limitAutoSlugsToAscii' => true,
 
+        'imageDriver' => 'gd',
+        
         'postCpLoginRedirect' => 'entries',
 
         // User-Login links are valid for 3 days

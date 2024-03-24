@@ -4,9 +4,16 @@
     background-color: $color-green;
     color: $color-white;
     outline: none;
-    border: none;
+    border: 1px solid $color-green;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
+    transition: $anim;
+
+    &:hover {
+        color: $color-green;
+        background-color: transparent;
+        transition: $anim;
+    }
 
     &__pricelist {
         margin-top: $margin-medium;
