@@ -57,6 +57,10 @@
 					</div>
 				</div>
 			</div>
+			{% set priceList = entry.priceList.one() %}
+			<div class="gr-24">
+				<a class="button button__pricelist" href="{{ priceList.url }}" target="_blank">Unsere Speisekarte</a>
+			</div>
 		</div>
 	</div>
 </section>

@@ -19,6 +19,7 @@
 						{% if mode == 'subsite' %}
 							<div class="header__jumpNav">
 								<a class="link" href="{{ url('/') }}#location">Standort</a>
+								<a class="link" href="{{ url('/') }}#openingHours">Standort</a>
 								<a class="link" href="{{ url('/') }}#food-and-drinks">Speisen & Getränke</a>
 								<a class="link" href="{{ url('/') }}#gallery">Gallerie</a>
 								<a class="link" href="{{ url('/') }}#partners">Partner</a>
@@ -26,6 +27,7 @@
 						{% else %}
 							<div class="header__jumpNav">
 								<a class="link" href="#location">Standort</a>
+								<a class="link" href="#openingHours">Standort</a>
 								<a class="link" href="#food-and-drinks">Speisen & Getränke</a>
 								<a class="link" href="#gallery">Gallerie</a>
 								<a class="link" href="#partners">Partner</a>
@@ -37,5 +39,9 @@
 		</div>
 	</header>
 
-	{% include "_includes/nav" %}
+	{% if entry.type == 'home' %}
+		{% include "_includes/nav" with {mode: ''} %}
+	{% else %}
+		{% include "_includes/nav" with {mode: 'subsite'} %}
+	{% endif %}
 {% endblock %}

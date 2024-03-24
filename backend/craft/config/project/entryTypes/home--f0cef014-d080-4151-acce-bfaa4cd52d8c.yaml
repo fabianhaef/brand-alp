@@ -134,6 +134,36 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 5c4e5480-3417-4c27-932d-b18c26bbea84 # Öffnungszeiten Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca6f4b74-c41d-4744-9325-d18519b40dad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54ff6f28-1b5a-4022-88cd-4452cdeae3d4 # Öffnungszeiten
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c82eaa4d-3d17-463f-85b8-abbfe59f4e93
+            userCondition: null
+            warning: null
+            width: 100
+        name: Öffnungszeiten
+        uid: 9d5aac34-fcde-47e1-b40e-590810a7c4bb
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: e9a2f0ef-4c4a-46a1-b506-ff66f2776221 # Speisen Titel
             instructions: null
             label: null
@@ -153,6 +183,23 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 68172b58-0d67-4a41-93fc-f63d46a412a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 0ee3c248-c2a1-4623-aaf3-c37edee26838
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 3d07c319-0c27-4ccb-8472-8930d0b62747 # Preisliste
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91f90c84-2030-4e05-b060-3aff8afc399a
             userCondition: null
             warning: null
             width: 100

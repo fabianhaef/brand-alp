@@ -4,10 +4,19 @@
 			<div class="row">
 				<div class="gr-24">
 					<div class="nav__primary">
-						<a href="#location" class="nav__link">Standort</a>
-						<a href="#food-and-drinks" class="nav__link">Speisen & Getränke</a>
-						<a href="#gallery" class="nav__link">Gallerie</a>
-						<a href="#partners" class="nav__link">Partner</a>
+						{% if mode == 'subsite' %}
+							<a href="{{ url('/') }}#location" class="nav__link">Standort</a>
+							<a href="{{ url('/') }}#openingHours" class="nav__link">Öffnungszeiten</a>
+							<a href="{{ url('/') }}#food-and-drinks" class="nav__link">Speisen & Getränke</a>
+							<a href="{{ url('/') }}#gallery" class="nav__link">Gallerie</a>
+							<a href="{{ url('/') }}#partners" class="nav__link">Partner</a>
+						{% else %}
+							<a href="#location" class="nav__link">Standort</a>
+							<a href="#openingHours" class="nav__link">Öffnungszeiten</a>
+							<a href="#food-and-drinks" class="nav__link">Speisen & Getränke</a>
+							<a href="#gallery" class="nav__link">Gallerie</a>
+							<a href="#partners" class="nav__link">Partner</a>
+						{% endif %}
 					</div>
 				</div>
 			</div>

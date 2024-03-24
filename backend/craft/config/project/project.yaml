@@ -1,4 +1,4 @@
-dateModified: 1711307982
+dateModified: 1711311146
 elementSources:
   craft\elements\Entry:
     -
@@ -57,21 +57,22 @@ fs:
 meta:
   __names__:
     0be81558-7927-4e8f-866b-b3a571e4e8c2: 'Sekundäre Navigation' # Sekundäre Navigation
+    3d07c319-0c27-4ccb-8472-8930d0b62747: Preisliste # Preisliste
     4fe0479e-71f8-48ef-ab81-948b2edc8b8f: Standard # Standard
     5b7d7792-f622-4289-a94e-f10fbe2ab5a9: Bilder # Bilder
+    5c4e5480-3417-4c27-932d-b18c26bbea84: 'Öffnungszeiten Titel' # Öffnungszeiten Titel
     5d513d88-6ffc-4ad6-8ee2-c8ae0137f535: Dokumente # Dokumente
     5f7e251b-0d47-4b0e-a1fd-37384588c244: 'Standort Text' # Standort Text
     9bb9b75a-9397-440a-8079-b62c7c281585: Bild # Bild
     11c2ce43-5a86-4949-9221-5c782ce91b2e: Alpwirtschaften # Alpwirtschaften
-    12a480cf-2b03-4fbf-b964-740fd75d76de: Gallerie # Gallerie
     20c18c2a-6550-4e8f-aeac-27ee0bd5b80f: Starttext # Starttext
+    54ff6f28-1b5a-4022-88cd-4452cdeae3d4: Öffnungszeiten # Öffnungszeiten
     96f07d02-866d-40f3-8796-19cbbcd7f5a1: Videos # Videos
     206b0441-3b56-4d0e-9491-0b8d30b4baed: SEO # SEO
     225ee2f5-06df-4c35-9611-df9d463ebc6d: 'HI Base' # HI Base
     669e2a7a-0c8c-4f09-ae3a-81ef311f8b72: Unterseiten # Unterseiten
     03689d2e-62bd-4a61-9f93-e75006143ccb: Autoren # Autoren
     53663f9e-7fed-498d-a311-d78a14218842: 'Standort Bild' # Standort Bild
-    056651d5-c4a8-4d21-82ed-7a7eb78d225d: Location # Location
     8944216b-26d3-4667-be63-b2ba52e00229: Startbild # Startbild
     a0628d93-ae48-4103-bf03-dbcf0c4b84f3: 'Primäre Navigation' # Primäre Navigation
     a78c039f-e0dc-463b-9947-59494494f58d: 'Speisen Bilder' # Speisen Bilder
