@@ -95,8 +95,35 @@
         }
     }
 
+    &.nav--active {
+        .header__wrapper {
+            background-color: $color-black;
+        }
+
+        &.headroom--not-top {
+
+            .header__wrapper {
+                background-color: $color-black;
+                border-bottom: 1px solid $color-black;
+
+                .header__slogan {
+                    color: $color-white;
+                }
+
+                .header__target {
+                    .header__burger {
+                        .line {
+                            background-color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     &.headroom--not-top {
+
         .header__wrapper {
             background-color: $color-white;
             border-bottom: 1px solid $color-green;

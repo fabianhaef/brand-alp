@@ -73,7 +73,7 @@
 				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" data-srcset="{{ heroImage.url(mobile) }}" type="image/webp">
 				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" data-srcset="{{ heroImage.url(mobile) }}" type="image/jpeg">
 
-				<img src="{{ heroImage.url }}" alt="Brandalp Hero Image">
+				<img class="lazyload" data-src="{{ heroImage.url }}" alt="Brandalp Hero Image">
 			</picture>
 		</div>
 		<div class="hero__shadow"></div>

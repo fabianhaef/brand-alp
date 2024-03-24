@@ -39,26 +39,11 @@
 
     &__item {
         color: $color-black;
-        height: calc(100% + 25px);
+        height: 100%;
+        margin-right: 10px;
 
         @include respond-to(small) {
-            height: calc(100% + 36px);
-        }
-
-
-        &--hoverable {
-            &:hover {
-                img {
-                    transition: transform 330ms ease-in-out;
-                    transform: $image-scale;
-                }
-
-                .imagescroll__icon--wrapper {
-                    width: 32px;
-                    height: 18px;
-                    transition: width $time ease-in-out;
-                }
-            }
+            height: 100%;
         }
     }
 }

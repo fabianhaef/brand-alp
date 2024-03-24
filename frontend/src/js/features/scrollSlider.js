@@ -32,11 +32,11 @@ const setupScrollSliders = () => {
 
     scrollSliders.forEach(img => {
         const wrapper = img.querySelector('.imagescroll__wrapper');
+
         const inner = img.querySelector('.imagescroll__inner');
 
+        // If multiple modules are in the same page, only get the ones with the same id
         const filteredImages = Array.from(allImages).filter(i => i.getAttribute('data-group') === img.getAttribute('data-group'));
-
-
 
         // Some responsive stuff for both text & scroll container
         window.addEventListener('resize', () => {

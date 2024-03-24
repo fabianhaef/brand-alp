@@ -4,12 +4,16 @@
     padding-bottom: 100vh;
     overflow: hidden;
     z-index: $layer-content;
+    margin-bottom: calc($margin-large - 73px);
 
-    margin-bottom: $margin-large;
+    @include respond-to(large) {
+        margin-bottom: calc($margin-xxlarge - 73px);
+    }
 
     @include respond-to(small) {
         padding-bottom: 100vh;
         padding-bottom: 100svh;
+        margin-bottom: calc($margin-xlarge - 73px);
     }
 
     &__shadow {
