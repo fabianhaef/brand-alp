@@ -164,6 +164,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: f8e4550b-6663-4892-b331-1059594b1a85 # Titel Alpwirtschaften
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d4ebf1ab-4fd7-41c2-9950-7030c82d8b3e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 11c2ce43-5a86-4949-9221-5c782ce91b2e # Alpwirtschaften
             instructions: null
             label: null

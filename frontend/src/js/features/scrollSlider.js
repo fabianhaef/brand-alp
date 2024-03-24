@@ -46,13 +46,11 @@ const setupScrollSliders = () => {
         // Some init stuff
         calculateContainerWidth(filteredImages, wrapper);
 
-
-
         ScrollTrigger
             .create({
                 trigger: img,
                 start: 'center center',
-                end: () => `+=95%`, // Calculate endpoint dynamically
+                end: '+=100%',
                 pin: true,
                 pinSpacing: false,
                 onUpdate: self => {

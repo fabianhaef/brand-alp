@@ -1,29 +1,17 @@
 .imagescroll {
     margin-bottom: calc(100vh + $margin-large);
+    margin-top: 30px;
     position: relative;
     overflow: hidden;
     width: auto;
 
-    &__item {
-        color: $color-black;
-        height: calc(100% + 25px);
-        width: 85vw;
-        margin-right: 20px;
+    @include respond-to(medium) {
+        margin-bottom: calc(100vh + 100px);
+        margin-top: 120px;
+    }
 
-        &--hoverable {
-            &:hover {
-                img {
-                    transition: transform $time $easing;
-                    transform: $image-scale;
-                }
-
-                .imagescroll__icon--wrapper {
-                    width: 32px;
-                    height: 18px;
-                    transition: width $time $easing;
-                }
-            }
-        }
+    @include respond-to(large) {
+        margin-bottom: calc(100vh + 170px);
     }
 
     &__inner {
@@ -35,8 +23,6 @@
     }
 
     .scrollimage-image {
-        aspect-ratio: 16/9;
-
         height: 300px;
         margin-right: $margin-small;
         overflow: hidden;
@@ -44,5 +30,35 @@
         transform: scale(1);
         width: auto;
 
+
+        @include respond-to(small) {
+            height: 100%;
+            margin-right: $margin-medium;
+        }
+    }
+
+    &__item {
+        color: $color-black;
+        height: calc(100% + 25px);
+
+        @include respond-to(small) {
+            height: calc(100% + 36px);
+        }
+
+
+        &--hoverable {
+            &:hover {
+                img {
+                    transition: transform 330ms ease-in-out;
+                    transform: $image-scale;
+                }
+
+                .imagescroll__icon--wrapper {
+                    width: 32px;
+                    height: 18px;
+                    transition: width $time ease-in-out;
+                }
+            }
+        }
     }
 }

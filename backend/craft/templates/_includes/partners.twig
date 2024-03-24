@@ -3,6 +3,9 @@
 <section class="section">
 	<div class="container">
 		<div class="row">
+			<div class="gr-24">
+				<h2 class="section__title">{{ entry.partnersTitle }}</h2>
+			</div>
 			{% for matrixBlock in entry.alpRestaurants.all() %}
 				{% set blockImage = matrixBlock.blockImage.one() %}
 				<div class="gr-12 gr-8@small">

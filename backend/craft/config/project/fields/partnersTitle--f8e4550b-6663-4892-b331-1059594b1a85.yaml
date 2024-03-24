@@ -1,9 +1,9 @@
-columnSuffix: mrjmeafl
+columnSuffix: dzbzhzvq
 contentColumnType: text
 fieldGroup: da1d4526-3f54-4890-bcae-4d569b18dc7a # Common
-handle: locationTitle
+handle: partnersTitle
 instructions: null
-name: 'Standort Titel'
+name: 'Titel Alpwirtschaften'
 searchable: false
 settings:
   byteLimit: null
