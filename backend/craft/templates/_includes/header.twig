@@ -16,12 +16,21 @@
 						</div>
 					</div>
 					<div class="gr-18 hide show@small">
-						<div class="header__jumpNav">
-							<a class="link" href="#location">Standort</a>
-							<a class="link" href="#food-and-drinks">Speisen & Getränke</a>
-							<a class="link" href="#gallery">Gallerie</a>
-							<a class="link" href="#partners">Partner</a>
-						</div>
+						{% if mode == 'subsite' %}
+							<div class="header__jumpNav">
+								<a class="link" href="{{ url('/') }}#location">Standort</a>
+								<a class="link" href="{{ url('/') }}#food-and-drinks">Speisen & Getränke</a>
+								<a class="link" href="{{ url('/') }}#gallery">Gallerie</a>
+								<a class="link" href="{{ url('/') }}#partners">Partner</a>
+							</div>
+						{% else %}
+							<div class="header__jumpNav">
+								<a class="link" href="#location">Standort</a>
+								<a class="link" href="#food-and-drinks">Speisen & Getränke</a>
+								<a class="link" href="#gallery">Gallerie</a>
+								<a class="link" href="#partners">Partner</a>
+							</div>
+						{% endif %}
 					</div>
 				</div>
 			</div>

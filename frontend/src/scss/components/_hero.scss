@@ -63,6 +63,10 @@
             left: 40px;
             width: 50%;
         }
+
+        @include respond-to(full) {
+            left: calc((100vw - 1680px) / 2);
+        }
     }
 
     &__title {
