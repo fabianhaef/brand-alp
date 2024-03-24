@@ -41,13 +41,16 @@
 			<div class="gr-24">
 				<h2 class="section__title">{{entry.galleryTitle}}</h2>
 			</div>
-			<div class="gr-24">
-				<div class="imagescroll" data-group="{{ entry.id }}">
+		</div>
+	</div>
+	<div class="imagescroll" data-group="{{ entry.id }}">
+		<div class="container">
+			<div class="row">
+				<div class="gr-24">
 					<div class="imagescroll__wrapper">
 						<div class="imagescroll__inner">
 							{% for img in galleryElements %}
 								<div class="imagescroll__item">
-
 									<picture>
 										<source media="(min-width: 768px)" srcset="{{ img.url(webp768) }}" data-srcset="{{ img.url(webp768) }}" type="image/webp">
 										<source media="(min-width: 768px)" srcset="{{ img.url(jpeg768) }}" data-srcset="{{ img.url(jpeg768) }}" type="image/jpeg">
@@ -57,6 +60,9 @@
 
 										<img src="{{ img.url(jpeg320) }}" width="{{ img.getWidth(webp320) }}" height="{{ img.getHeight(jpeg320) }}" class="scrollimage-image lazyload" alt="{{ img.alt }}" data-container="imagescroll-{{ loop.index }}" data-content="{{ img.alt }}" data-group="{{ loop.index }}">
 									</picture>
+									<span class="imagescroll__legend--wrapper">
+										<p class="imagescroll__image-legend">Platzhalter um platz u</p>
+									</span>
 								</div>
 							{% endfor %}
 						</div>

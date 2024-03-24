@@ -12,7 +12,7 @@
 					<a class="partner" href="{{ matrixBlock.blockLink }}" target="_blank">
 						<div class="partner__image">
 							<picture>
-								<img src="{{blockImage.url}}" alt="Bild {{ matrixBlock.blockName }}">
+								<img class="lazyload" data-src="{{blockImage.url}}" alt="Bild {{ matrixBlock.blockName }}">
 							</picture>
 						</div>
 						<div class="partner__name">

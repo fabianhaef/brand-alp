@@ -43,8 +43,9 @@
 
     svg {
         display: inline;
-        width: 20px;
+        height: 20px;
         transition: transform $time $easing;
+        margin-left: $margin-xsmall;
 
         path {
             stroke: $color-green;
