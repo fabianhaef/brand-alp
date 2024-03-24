@@ -95,6 +95,74 @@
         }
     }
 
+    // subsite styling
+    &.subsite {
+        .header__wrapper {
+            background-color: $color-white;
+            border-bottom: 1px solid $color-green;
+
+            .header__slogan {
+                color: $color-green;
+                transition: $anim;
+            }
+
+            .header__target {
+                .header__burger {
+                    .line {
+                        background-color: $color-green;
+                    }
+                }
+            }
+
+            .header__jumpNav {
+                .link {
+                    color: $color-green;
+                    transition: $anim;
+                }
+            }
+        }
+
+
+        &.nav--active {
+            .header__wrapper {
+                background-color: $color-black;
+                border-bottom: 1px solid transparent;
+            }
+
+            .header__slogan {
+                color: $color-white;
+                transition: $anim;
+            }
+
+            .header__target {
+                .header__burger {
+                    .line {
+                        background-color: $color-white;
+                    }
+                }
+            }
+
+            &.headroom--not-top {
+                .header__wrapper {
+                    background-color: $color-black;
+                    border-bottom: 1px solid $color-black;
+
+                    .header__slogan {
+                        color: $color-white;
+                    }
+
+                    .header__target {
+                        .header__burger {
+                            .line {
+                                background-color: $color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     &.nav--active {
         .header__wrapper {
             background-color: $color-black;

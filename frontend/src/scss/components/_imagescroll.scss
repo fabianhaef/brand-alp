@@ -1,6 +1,5 @@
 .imagescroll {
-    margin-bottom: calc(100vh + $margin-large);
-    margin-top: 30px;
+    margin-bottom: 100vh;
     position: relative;
     overflow: hidden;
     width: auto;
@@ -23,8 +22,8 @@
     }
 
     .scrollimage-image {
-        height: 300px;
-        margin-right: $margin-small;
+        aspect-ratio: 3 / 4;
+        height: 200px;
         overflow: hidden;
         transition: transform 330ms ease-in-out;
         transform: scale(1);

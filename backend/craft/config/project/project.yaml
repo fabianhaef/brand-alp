@@ -1,4 +1,4 @@
-dateModified: 1711305295
+dateModified: 1711307982
 elementSources:
   craft\elements\Entry:
     -
@@ -11,7 +11,7 @@ elementSources:
       key: 'single:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home
       type: native
     -
-      key: 'single:9e388fcf-7cd8-4076-af22-13a6e7dedbe7' # Globale Inhalte
+      key: 'single:9e388fcf-7cd8-4076-af22-13a6e7dedbe7'
       type: native
     -
       heading: Strukturen
@@ -62,7 +62,6 @@ meta:
     5d513d88-6ffc-4ad6-8ee2-c8ae0137f535: Dokumente # Dokumente
     5f7e251b-0d47-4b0e-a1fd-37384588c244: 'Standort Text' # Standort Text
     9bb9b75a-9397-440a-8079-b62c7c281585: Bild # Bild
-    9e388fcf-7cd8-4076-af22-13a6e7dedbe7: 'Globale Inhalte' # Globale Inhalte
     11c2ce43-5a86-4949-9221-5c782ce91b2e: Alpwirtschaften # Alpwirtschaften
     12a480cf-2b03-4fbf-b964-740fd75d76de: Gallerie # Gallerie
     20c18c2a-6550-4e8f-aeac-27ee0bd5b80f: Starttext # Starttext
@@ -71,7 +70,6 @@ meta:
     225ee2f5-06df-4c35-9611-df9d463ebc6d: 'HI Base' # HI Base
     669e2a7a-0c8c-4f09-ae3a-81ef311f8b72: Unterseiten # Unterseiten
     03689d2e-62bd-4a61-9f93-e75006143ccb: Autoren # Autoren
-    4506ba97-f6aa-4c53-b507-65357f6e7931: 'Globale Inhalte' # Globale Inhalte
     53663f9e-7fed-498d-a311-d78a14218842: 'Standort Bild' # Standort Bild
     056651d5-c4a8-4d21-82ed-7a7eb78d225d: Location # Location
     8944216b-26d3-4667-be63-b2ba52e00229: Startbild # Startbild

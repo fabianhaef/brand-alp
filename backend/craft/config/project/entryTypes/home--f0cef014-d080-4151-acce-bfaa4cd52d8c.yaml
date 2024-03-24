@@ -194,24 +194,6 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 206b0441-3b56-4d0e-9491-0b8d30b4baed # SEO
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 48d6174a-2eb0-45cf-8b9f-4d2c9f93d8ba
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: 7f92f7a5-dfc9-4950-aa5c-92792ea66215
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
             fieldUid: fdff2943-9d99-4e31-8950-f3bf9cbdfe69 # Gallerie Titel
             instructions: null
             label: null
@@ -236,6 +218,24 @@ fieldLayouts:
             width: 100
         name: Gallerie
         uid: 68c86afe-abdb-443e-abe7-66c8806e76c3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 206b0441-3b56-4d0e-9491-0b8d30b4baed # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48d6174a-2eb0-45cf-8b9f-4d2c9f93d8ba
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 7f92f7a5-dfc9-4950-aa5c-92792ea66215
         userCondition: null
 handle: home
 hasTitleField: false

@@ -55,7 +55,7 @@
 										<source media="(min-width: 300px)" srcset="{{ img.url(webp320) }}" data-srcset="{{ img.url(webp320) }}" type="image/webp">
 										<source media="(min-width: 300px)" srcset="{{ img.url(jpeg320) }}" data-srcset="{{ img.url(jpeg320) }}" type="image/jpeg">
 
-										<img src="{{ img.url(jpeg320) }}" class="scrollimage-image lazyload" alt="{{ img.alt }}" data-container="imagescroll-{{ loop.index }}" data-content="{{ img.alt }}" data-group="{{ loop.index }}">
+										<img src="{{ img.url(jpeg320) }}" width="{{ img.getWidth(webp320) }}" height="{{ img.getHeight(jpeg320) }}" class="scrollimage-image lazyload" alt="{{ img.alt }}" data-container="imagescroll-{{ loop.index }}" data-content="{{ img.alt }}" data-group="{{ loop.index }}">
 									</picture>
 								</div>
 							{% endfor %}

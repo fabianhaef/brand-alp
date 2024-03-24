@@ -17,12 +17,12 @@ const setupScrollSliders = () => {
         filteredImages.forEach((i, index) => {
             const width = i.getBoundingClientRect().width;
             if (index + 1 !== filteredImages.length) {
-                totalWidth += width + 30;
+                totalWidth += width + 130;
             }
         });
 
         if (window.innerWidth < 768) {
-            totalWidth -= 50;
+            totalWidth -= 150;
         }
 
         wrapper.style.width = `${totalWidth}px`;

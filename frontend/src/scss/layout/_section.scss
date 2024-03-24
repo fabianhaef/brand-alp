@@ -9,6 +9,18 @@
     @include respond-to(large) {
         margin-bottom: calc($margin-xxlarge - 73px);
     } 
+
+    &--only {
+        margin: $margin-small 0;
+
+        @include respond-to(small) {
+            margin: $margin-medium 0 $margin-xlarge ;
+        }
+    
+        @include respond-to(large) {
+            margin: $margin-large 0 $margin-xxlarge;
+        } 
+    }
     
     &__title {
         @extend .text__subtitle;
@@ -18,7 +30,14 @@
 
     &__wysiwyg {
         @extend .text__paragraph;
+        text-wrap: balance;
+        hyphens: auto;
         margin-bottom: $margin-small;
+
+        a {
+            color: $color-black;
+            text-decoration: underline;
+        }
     }
 
     &__image {
