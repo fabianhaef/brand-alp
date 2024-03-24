@@ -20,6 +20,7 @@
     "flickity": "^3.0.0",
     "gsap": "^3.12.5",
     "headroom.js": "^0",
+    "jump.js": "^1.0.2",
     "lazysizes": "^5.3.2",
     "rollup-plugin-critical": "^1.0.9",
     "sanitize.css": "^13",

@@ -1,5 +1,14 @@
 .section {
-    margin-bottom: $margin-large;
+    margin-bottom: calc($margin-large - 73px);
+    padding-top: 73px;
+
+    @include respond-to(small) {
+        margin-bottom: calc($margin-xlarge - 73px);
+    }
+
+    @include respond-to(large) {
+        margin-bottom: calc($margin-xxlarge - 73px);
+    } 
     
     &__title {
         @extend .text__subtitle;

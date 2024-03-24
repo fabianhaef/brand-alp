@@ -5,26 +5,39 @@
 
     &:hover {
         cursor: pointer;
+
+        .partner__image {
+            overflow: hidden;
+
+            img {
+                transition: all $time $easing;
+                transform: $image-scale;
+            }
+        }
     }
 
     &__image {
         width: 100%;
         margin-bottom: $margin-small;
+        overflow: hidden;
 
         img {
             aspect-ratio: 1 / 1;
             height: 100%;
             width: 100%;
             object-fit: cover;
+            transition: all $time $easing;
         }
     }
 
     &__name {
+        display: inline;
         hyphens: auto;
         text-wrap: balance;
     }
 
     svg {
+        display: inline;
         width: 20px;
 
         path {

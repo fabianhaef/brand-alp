@@ -17,7 +17,7 @@ const setupScrollSliders = () => {
         filteredImages.forEach((i, index) => {
             const width = i.getBoundingClientRect().width;
             if (index + 1 !== filteredImages.length) {
-                totalWidth += width;
+                totalWidth += width + 30;
             }
         });
 
@@ -45,6 +45,8 @@ const setupScrollSliders = () => {
 
         // Some init stuff
         calculateContainerWidth(filteredImages, wrapper);
+
+
 
         ScrollTrigger
             .create({
