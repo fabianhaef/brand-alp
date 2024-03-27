@@ -10,6 +10,12 @@
             height: 650px;
         }
 
+        &:hover {
+            cursor: grabbing;
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
+        }
+
         .swiper-slide {
             aspect-ratio: 16 / 9;
 
@@ -19,6 +25,6 @@
                 object-fit: cover;
             }
         }
-    
+
     }
 }

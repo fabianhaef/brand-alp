@@ -15,23 +15,14 @@ const setupScrollSliders = () => {
         let totalWidth = 0;
 
         filteredImages.forEach((i, index) => {
-            const width = i.getBoundingClientRect().width;
             if (index + 1 !== filteredImages.length) {
-                totalWidth += width + 20;
+                if (window.innerWidth > 1200) {
+                    totalWidth += i.getBoundingClientRect().width + 36;
+                } else {
+                    totalWidth += i.getBoundingClientRect().width + 20;
+                }
             }
         });
-
-        // if (window.innerWidth < 768) {
-        //     totalWidth -= 50;
-        // }
-
-        totalWidth = totalWidth - 20;
-
-        // if (window.innerWidth < 768) {
-        //     totalWidth = totalWidth - 20;
-        // } else {
-        //     totalWidth = totalWidth - 50;
-        // }
 
         wrapper.style.width = `${totalWidth}px`;
         wrapper.style.maxWidth = `${totalWidth}px`;
