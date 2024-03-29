@@ -58,22 +58,22 @@
 	<div class="hero">
 		<div class="hero__image">
 			<picture>
-				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" data-srcset="{{ heroImage.url(full) }}" type="image/webp">
-				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" data-srcset="{{ heroImage.url(full) }}" type="image/jpeg">
+				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" type="image/webp">
+				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" type="image/jpeg">
 
-				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" data-srcset="{{ heroImage.url(large) }}" type="image/webp">
-				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" data-srcset="{{ heroImage.url(large) }}" type="image/jpeg">
+				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" type="image/webp">
+				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" type="image/jpeg">
 
-				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" data-srcset="{{ heroImage.url(medium) }}" type="image/webp">
-				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" data-srcset="{{ heroImage.url(medium) }}" type="image/jpeg">
+				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" type="image/webp">
+				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" type="image/jpeg">
 
-				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" data-srcset="{{ heroImage.url(tablet) }}" type="image/webp">
-				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" data-srcset="{{ heroImage.url(tablet) }}" type="image/jpeg">
+				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" type="image/webp">
+				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" type="image/jpeg">
 
-				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" data-srcset="{{ heroImage.url(mobile) }}" type="image/webp">
-				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" data-srcset="{{ heroImage.url(mobile) }}" type="image/jpeg">
+				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" type="image/webp">
+				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" type="image/jpeg">
 
-				<img class="lazyload" data-src="{{ heroImage.url }}" alt="Brandalp Hero Image">
+				<img data-src="{{ heroImage.url }}" fetchpriority="high" sizes="100vw" alt="Brandalp Hero Image">
 			</picture>
 		</div>
 		<div class="hero__shadow"></div>
