@@ -25,7 +25,8 @@
     "rollup-plugin-critical": "^1.0.9",
     "sanitize.css": "^13",
     "sass-rem": "^3.0.0",
-    "swiper": "^11.0.7"
+    "swiper": "^11.0.7",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "browserslist": [
     "> 2% in CH",
