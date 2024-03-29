@@ -1,6 +1,6 @@
 {
   "src/js/main-legacy.js": {
-    "file": "assets/main-legacy.491ff1cc.js",
+    "file": "assets/main-legacy.60005764.js",
     "src": "src/js/main-legacy.js",
     "isEntry": true
   },
@@ -10,15 +10,15 @@
     "isEntry": true
   },
   "src/js/main.js": {
-    "file": "assets/main.70834373.js",
+    "file": "assets/main.e44f64e6.js",
     "src": "src/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main.5479ecca.css"
+      "assets/main.c3a9a6e0.css"
     ]
   },
   "src/js/main.css": {
-    "file": "assets/main.5479ecca.css",
+    "file": "assets/main.c3a9a6e0.css",
     "src": "src/js/main.css"
   }
 }
