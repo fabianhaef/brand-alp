@@ -56,26 +56,8 @@
 	{% set heroImage = entry.heroImage.one() %}
 
 	<div class="hero">
-		<div class="hero__image">
-			<picture>
-				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" type="image/webp">
-				<source media="(min-width: 1560px)" srcset="{{ heroImage.url(full) }}" type="image/jpeg">
+		<img class="hero__image" fetchpriority="high" alt="Brandalp Hero Image" src="{{ heroImage.url(mobile) }}" srcset="{{ heroImage.url(mobile) }} 300w, {{ heroImage.url(tablet) }} 768w, {{ heroImage.url(medium) }} 1044w, {{ heroImage.url(large) }} 1440w, {{ heroImage.url(full) }} 1560w ">
 
-				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" type="image/webp">
-				<source media="(min-width: 1440px)" srcset="{{ heroImage.url(large) }}" type="image/jpeg">
-
-				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" type="image/webp">
-				<source media="(min-width: 1044px)" srcset="{{ heroImage.url(medium) }}" type="image/jpeg">
-
-				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" type="image/webp">
-				<source media="(min-width: 768px)" srcset="{{ heroImage.url(tablet) }}" type="image/jpeg">
-
-				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" type="image/webp">
-				<source media="(min-width: 300px)" srcset="{{ heroImage.url(mobile) }}" type="image/jpeg">
-
-				<img data-src="{{ heroImage.url }}" fetchpriority="high" sizes="100vw" alt="Brandalp Hero Image">
-			</picture>
-		</div>
 		<div class="hero__shadow"></div>
 		<div class="hero__content">
 			<h1 class="hero__title">{{ entry.heroText }}</h1>
