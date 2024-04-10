@@ -24,3 +24,8 @@ html {
         pointer-events: none;
     }
 }
+
+::selection {
+    background: $color-green;
+    color: $color-white;
+}
