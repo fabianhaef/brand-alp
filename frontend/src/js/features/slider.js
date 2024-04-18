@@ -5,12 +5,12 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 1.05,
+    slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
     breakpoints: {
         768: {
-            slidesPerView: 2.1,
+            slidesPerView: 2,
             centeredSlides: false
         }
     }

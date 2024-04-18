@@ -1,5 +1,5 @@
 {% set webp320 = {
-	width: 308,
+	width: 408,
     height: 440,
     mode: 'crop',
     quality: 100,
@@ -7,7 +7,7 @@
 } %}
 
 {% set jpeg320 = {
-	width: 308,
+	width: 408,
     height: 440,
     mode: 'crop',
     quality: 100,
@@ -51,17 +51,8 @@
 						<div class="imagescroll__inner">
 							{% for img in galleryElements %}
 								<div class="imagescroll__item">
-									<picture>
-										<source media="(min-width: 768px)" srcset="{{ img.url(webp768) }}" data-srcset="{{ img.url(webp768) }}" type="image/webp">
-										<source media="(min-width: 768px)" srcset="{{ img.url(jpeg768) }}" data-srcset="{{ img.url(jpeg768) }}" type="image/jpeg">
-
-										<source media="(min-width: 300px)" srcset="{{ img.url(webp320) }}" data-srcset="{{ img.url(webp320) }}" type="image/webp">
-										<source media="(min-width: 300px)" srcset="{{ img.url(jpeg320) }}" data-srcset="{{ img.url(jpeg320) }}" type="image/jpeg">
-
-										<img src="{{ img.url(jpeg320) }}" width="{{ img.getWidth(webp320) }}" height="{{ img.getHeight(jpeg320) }}" class="scrollimage-image lazyload" alt="{{ img.alt }}" data-container="imagescroll-{{ loop.index }}" data-content="{{ img.alt }}" data-group="{{ loop.index }}">
-									</picture>
-									<div class="imagescroll__legend--wrapper">
-									</div>
+									<img src="{{ img.url(webp320) }}" width="{{ img.getWidth(webp320) }}" height="{{ img.getHeight(jpeg320) }}" class="scrollimage-image lazyload" alt="{{ img.alt }}" data-container="imagescroll-{{ loop.index }}" data-content="{{ img.alt }}" data-group="{{ loop.index }}" srcset="{{ img.url(webp320) }} 300w, {{ img.url(webp768) }} 1044w">
+									<div class="imagescroll__legend--wrapper"></div>
 								</div>
 							{% endfor %}
 						</div>
