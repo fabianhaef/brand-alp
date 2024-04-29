@@ -1,17 +1,17 @@
-columnSuffix: zdsqtypk
-contentColumnType: text
+columnSuffix: yzobnahs
+contentColumnType: string(640)
 fieldGroup: da1d4526-3f54-4890-bcae-4d569b18dc7a # Common
-handle: galleryTitle
-instructions: null
-name: 'Galerie Titel'
+handle: metaDescription
+instructions: 'Meta Beschreibung'
+name: 'Meta Description'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 160
   code: false
   columnType: null
-  initialRows: 4
-  multiline: false
+  initialRows: 2
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

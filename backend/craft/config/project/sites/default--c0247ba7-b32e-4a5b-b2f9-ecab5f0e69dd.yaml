@@ -3,7 +3,7 @@ enabled: true
 handle: default
 hasUrls: true
 language: de-CH
-name: '@siteName'
+name: 'Brand Alp'
 primary: true
 siteGroup: 225ee2f5-06df-4c35-9611-df9d463ebc6d # HI Base
 sortOrder: 1

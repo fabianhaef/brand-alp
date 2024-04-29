@@ -1,13 +1,13 @@
-columnSuffix: zdsqtypk
-contentColumnType: text
+columnSuffix: flsffhny
+contentColumnType: string(260)
 fieldGroup: da1d4526-3f54-4890-bcae-4d569b18dc7a # Common
-handle: galleryTitle
+handle: metaTitle
 instructions: null
-name: 'Galerie Titel'
+name: 'Meta Title'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 65
   code: false
   columnType: null
   initialRows: 4

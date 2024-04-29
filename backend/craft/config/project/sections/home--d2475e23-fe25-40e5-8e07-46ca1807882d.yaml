@@ -16,7 +16,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  c0247ba7-b32e-4a5b-b2f9-ecab5f0e69dd: # @siteName
+  c0247ba7-b32e-4a5b-b2f9-ecab5f0e69dd: # Brand Alp
     enabledByDefault: true
     hasUrls: true
     template: _templates/_home

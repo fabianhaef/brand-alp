@@ -1,6 +1,6 @@
 currLabel: SEO
 customIcon: null
-enabled: true
+enabled: false
 handle: seo
 icon: /Users/flouru/projects/hi-base-vite/backend/craft/vendor/ether/seo/src/icon-mask.svg
 layout: d2eaac86-1ec9-4495-8b0d-2b96f0238762 # Default

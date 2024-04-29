@@ -42,7 +42,7 @@ fieldLayouts:
             uid: f1fed71d-2a78-4cf7-a81f-b9eae3b6467a
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             fieldUid: 20c18c2a-6550-4e8f-aeac-27ee0bd5b80f # Starttext
@@ -54,7 +54,7 @@ fieldLayouts:
             uid: e2a033b5-cf88-466d-86d4-8f66d544ae9f
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
@@ -241,7 +241,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: fdff2943-9d99-4e31-8950-f3bf9cbdfe69 # Gallerie Titel
+            fieldUid: fdff2943-9d99-4e31-8950-f3bf9cbdfe69 # Galerie Titel
             instructions: null
             label: null
             required: false
@@ -253,7 +253,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d8b71489-beed-4561-af1e-7e4393a02db4 # Gallerie Bilder
+            fieldUid: d8b71489-beed-4561-af1e-7e4393a02db4 # Galerie Bilder
             instructions: null
             label: null
             required: false
@@ -271,13 +271,66 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 206b0441-3b56-4d0e-9491-0b8d30b4baed # SEO
+            fieldUid: 02e4577e-c0c7-4484-be04-13c5066ba715 # Meta Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 48d6174a-2eb0-45cf-8b9f-4d2c9f93d8ba
+            uid: bc7f4c01-8a30-4b1c-b9c1-60216ef43cf0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6c54f856-fabe-4604-a951-0bd445a21af8 # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b76a3b4-ec98-4e9b-84cb-38efbcc59a5c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: deb4fd0f-276a-46b8-b142-8e086cd23764
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 0d758957-d062-436e-9180-2599a4d81f00 # Open Graph Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acafd7a1-2221-40d3-9421-dc1e3e6810de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f42ba710-ca52-47a7-ba20-0cf2c5349f00 # Open Graph Beschreibung
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95db7b6d-493c-4fc4-8205-b570efb48ae8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a2c3be5b-542e-43b1-bc37-7dc5c339cc71 # Open Graph Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0555c2d7-9c25-4315-ada3-710256dd1272
             userCondition: null
             warning: null
             width: 100
