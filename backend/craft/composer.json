@@ -1,7 +1,7 @@
 {
   "require": {
     "craftcms/ckeditor": "3.8.1",
-    "craftcms/cms": "4.8.2",
+    "craftcms/cms": "4.8.10",
     "dodecastudio/craft-blurhash": "^2.0",
     "ether/seo": "4.2.2",
     "nystudio107/craft-typogrify": "4.0.1",
