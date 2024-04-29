@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2719bd66dd86ea3097837a178a067cac",
+    "content-hash": "967a048c849c6b8a51249a888a404491",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1090,62 +1090,6 @@
             "time": "2022-10-28T02:32:19+00:00"
         },
         {
-            "name": "embed/embed",
-            "version": "v4.4.10",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/8ac21505d048e8796c6cb9172ec5e81e5d0e0408",
-                "reference": "8ac21505d048e8796c6cb9172ec5e81e5d0e0408",
-                "shasum": ""
-            },
-            "require": {
-                "composer/ca-bundle": "^1.0",
-                "ext-curl": "*",
-                "ext-dom": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "ml/json-ld": "^1.1",
-                "oscarotero/html-parser": "^0.1.4",
-                "php": "^7.4|^8",
-                "psr/http-client": "^1.0",
-                "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0|^2.0"
-            },
-            "suggest": {
-                "symfony/css-selector": "If you want to get elements using css selectors"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
-                "psr-4": {
-                    "Embed\\": "src"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Oscar Otero",
-                    "email": "oom@oscarotero.com",
-                    "homepage": "http://oscarotero.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP library to retrieve page info using oembed, opengraph, etc",
-            "homepage": "https://github.com/oscarotero/Embed",
-            "keywords": [
-                "embed",
-                "embedly",
-                "oembed",
-                "opengraph",
-                "twitter cards"
-            ],
-            "time": "2023-12-10T12:30:47+00:00"
-        },
-        {
             "name": "enshrined/svg-sanitize",
             "version": "0.16.0",
             "dist": {
@@ -1870,86 +1814,6 @@
             "time": "2023-04-19T08:25:22+00:00"
         },
         {
-            "name": "ml/iri",
-            "version": "1.1.4",
-            "target-dir": "ML/IRI",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lanthaler/IRI/zipball/cbd44fa913e00ea624241b38cefaa99da8d71341",
-                "reference": "cbd44fa913e00ea624241b38cefaa99da8d71341",
-                "shasum": ""
-            },
-            "require": {
-                "lib-pcre": ">=4.0",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "ML\\IRI": ""
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Markus Lanthaler",
-                    "email": "mail@markus-lanthaler.com",
-                    "homepage": "http://www.markus-lanthaler.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "IRI handling for PHP",
-            "homepage": "http://www.markus-lanthaler.com",
-            "keywords": [
-                "URN",
-                "iri",
-                "uri",
-                "url"
-            ],
-            "time": "2014-01-21T13:43:39+00:00"
-        },
-        {
-            "name": "ml/json-ld",
-            "version": "1.2.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lanthaler/JsonLD/zipball/537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
-                "reference": "537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ml/iri": "^1.1.1",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ML\\JsonLD\\": ""
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Markus Lanthaler",
-                    "email": "mail@markus-lanthaler.com",
-                    "homepage": "http://www.markus-lanthaler.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "JSON-LD Processor for PHP",
-            "homepage": "http://www.markus-lanthaler.com",
-            "keywords": [
-                "JSON-LD",
-                "jsonld"
-            ],
-            "time": "2022-09-29T08:45:17+00:00"
-        },
-        {
             "name": "moneyphp/money",
             "version": "v4.4.0",
             "dist": {
@@ -2298,44 +2162,6 @@
                 "source": "https://github.com/nystudio107/craft-vite"
             },
             "time": "2024-03-02T05:11:19+00:00"
-        },
-        {
-            "name": "oscarotero/html-parser",
-            "version": "v0.1.8",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/html-parser/zipball/10f3219267a365d9433f2f7d1694209c9d436c8d",
-                "reference": "10f3219267a365d9433f2f7d1694209c9d436c8d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2 || ^8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "HtmlParser\\": "src"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Oscar Otero",
-                    "email": "oom@oscarotero.com",
-                    "homepage": "http://oscarotero.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Parse html strings to DOMDocument",
-            "homepage": "https://github.com/oscarotero/html-parser",
-            "keywords": [
-                "dom",
-                "html",
-                "parser"
-            ],
-            "time": "2023-11-29T20:28:41+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3156,59 +2982,6 @@
                 "unix"
             ],
             "time": "2023-09-03T09:24:00+00:00"
-        },
-        {
-            "name": "spicyweb/craft-neo",
-            "version": "3.9.11",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/23e090bcc0e177976f3a78cabf7e0236db72e71d",
-                "reference": "23e090bcc0e177976f3a78cabf7e0236db72e71d",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.5.0",
-                "php": "^8.0.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "neo",
-                "name": "Neo",
-                "schemaVersion": "3.6.2",
-                "class": "benf\\neo\\Plugin",
-                "changelogUrl": "https://github.com/spicywebau/craft-neo/blob/3.x/CHANGELOG.md",
-                "downloadUrl": "https://github.com/spicywebau/craft-neo/archive/refs/tags/3.9.11.zip"
-            },
-            "autoload": {
-                "psr-4": {
-                    "benf\\neo\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Spicy Web",
-                    "homepage": "https://github.com/spicywebau"
-                }
-            ],
-            "description": "A Matrix-like field type that uses existing fields",
-            "keywords": [
-                "cms",
-                "craftcms",
-                "field",
-                "matrix",
-                "neo",
-                "plugin"
-            ],
-            "support": {
-                "issues": "https://github.com/spicywebau/craft-neo/issues",
-                "source": "https://github.com/spicywebau/craft-neo",
-                "docs": "https://github.com/spicywebau/craft-neo/blob/3.9.11/README.md",
-                "rss": "https://github.com/spicywebau/craft-neo/commits/3.x.atom"
-            },
-            "time": "2023-12-08T11:21:26+00:00"
         },
         {
             "name": "symfony/console",
@@ -4838,60 +4611,6 @@
                 "rss": "https://github.com/verbb/field-manager/commits/v2.atom"
             },
             "time": "2023-10-25T00:31:21+00:00"
-        },
-        {
-            "name": "verbb/hyper",
-            "version": "1.1.16",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/hyper/zipball/c37c6b048e17340c515fe4a14b6b914fc0f4c59e",
-                "reference": "c37c6b048e17340c515fe4a14b6b914fc0f4c59e",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "embed/embed": "^3.0.0 || ^4.0.0",
-                "nystudio107/craft-plugin-vite": "^4.0.0",
-                "php": "^8.0.2",
-                "verbb/base": "^2.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Hyper",
-                "handle": "hyper",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/hyper/craft-4/CHANGELOG.md",
-                "class": "verbb\\hyper\\Hyper"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\hyper\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "A user-friendly links field for Craft.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "hyper"
-            ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/hyper/issues?state=open",
-                "source": "https://github.com/verbb/hyper",
-                "docs": "https://github.com/verbb/hyper",
-                "rss": "https://github.com/verbb/hyper/commits/v2.atom"
-            },
-            "time": "2023-10-25T22:24:39+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

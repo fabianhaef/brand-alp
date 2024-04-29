@@ -6,11 +6,9 @@
     "ether/seo": "4.2.2",
     "nystudio107/craft-typogrify": "4.0.1",
     "nystudio107/craft-vite": "4.0.9",
-    "spicyweb/craft-neo": "^3.5.16",
     "verbb/cp-nav": "4.0.12",
     "verbb/expanded-singles": "^2.0.0",
     "verbb/field-manager": "^3.0.5",
-    "verbb/hyper": "1.1.16",
     "vlucas/phpdotenv": "^2.6"
   },
   "autoload": {
