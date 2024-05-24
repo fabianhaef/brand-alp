@@ -1,6 +1,21 @@
 {% extends '_layouts/master' %}
+{% set bodyClass = 'fo' %}
+
 {% block content %}
-    <h1>
-        404 Seite nicht gefunden
-    </h1>
+	{% include '_includes/header' with {mode: 'subsite'} %}
+
+	<main class="main" id="main">
+		<section class="section section--only">
+			<div class="container">
+				<div class="row">
+					<div class="gr-24">
+						<h1>
+							404 Seite nicht gefunden
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	{% include '_includes/footer' %}
 {% endblock %}
