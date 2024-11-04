@@ -38,16 +38,15 @@ const setupScrollSliders = () => {
             calculateContainerWidth(allImages, wrapper);
         });
 
-        // Some init stuff
         calculateContainerWidth(allImages, wrapper);
 
         ScrollTrigger
             .create({
                 trigger: img,
                 start: 'center center',
-                end: '+=100%',
+                end: '+=250%',
                 pin: true,
-                pinSpacing: false,
+                pinSpacing: true,
                 onUpdate: self => {
                     const progress = self.progress;
                     const percent = Math.round(progress * 100);
