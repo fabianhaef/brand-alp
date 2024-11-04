@@ -1,8 +1,6 @@
 headingLevels: false
 name: Simple
 toolbar:
-  - heading
-  - '|'
   - bold
   - italic
   - link
